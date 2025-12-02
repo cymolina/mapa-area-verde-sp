@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Verde na Lupa – São Paulo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Turf.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+</head>
+
+<body>
+
+    <!-- CARD LATERAL -->
+    <div class="card">
+        <h2>Área Verde na Lupa</h2>
+        <p>Mova o cursor sobre o mapa para começar a análise.</p>
+
+        <div id="area-calculada">0 m²</div>
+
+        <!-- Nota minimalista com ícone ℹ️ -->
+        <p class="nota-info">
+            <span class="info-icon">ℹ️</span>
+            A camada de parques não inclui áreas sob concessão, como o Parque Ibirapuera.
+            A área exibida pode ser menor que a realidade.<br>
+            <strong>Fonte:</strong> GeoSampa – CAM_ADM_ESP<br>
+            <a href="https://metadados.geosampa.prefeitura.sp.gov.br/geonetwork/srv/por/catalog.search#/metadata/48f702b4-f2ea-42f4-bacd-5682ae1731e2"
+                target="_blank" style="color:#39ff14;">
+                Ver metadados
+            </a>
+        </p>
+    </div>
+
+    <!-- MAPA -->
+    <div id="map"></div>
+
+    <!-- ASSINATURA -->
+    <div class="creditos">
+        Desenvolvido por <strong>Cyntia Molina</strong> •
+        <a href="https://github.com/cymolina" target="_blank">GitHub</a>
+    </div>
+
+    <!-- SCRIPT PRINCIPAL -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
